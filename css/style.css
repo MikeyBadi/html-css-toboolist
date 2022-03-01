@@ -5,6 +5,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+  background-color: #F6F8F9;
+
+}
+
 /* 
   HEADER
 */
@@ -24,3 +29,61 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+/* 
+  MAIN
+*/
+
+#main-container{
+  width: 70%;
+  margin: 35px auto 10px;
+}
+
+/* container for the buttons */
+main .container{
+
+}
+
+/* buttons */
+
+.buttons{
+  padding: 15px 0px 10px 50px;
+  background-color: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+
+.button{
+  padding: 7px;
+  border-radius: 5px;
+}
+
+#task{
+  background-color: #46ADF1;
+  color: white;
+  border: none;
+}
+#task:hover{
+  background-color: #3484ba;
+}
+
+#section{
+  background-color: white;
+  border: 0.5px solid #C5CBD1;
+  color: #C5CBD1;
+}
+#section:hover{
+  background-color: #9ea4aa;
+  color: white;
+  border: 0.5px solid transparent;
+}
+
+/* TASK VIEWER */
+
+main .task-viewer{
+  margin-top: 1px;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  }
