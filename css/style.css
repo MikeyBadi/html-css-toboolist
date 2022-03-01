@@ -79,9 +79,8 @@ body{
 
 /* new task */
 
-/* title: New Task */
 main .task-viewer{
-  margin-top: 1px;
+  margin-top: 2px;
   background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -93,6 +92,8 @@ main .task-viewer{
     padding-right: 5px;
   }
 /* task */
+
+
   main .task-viewer p{
     padding-bottom: 20px;
   }
@@ -105,6 +106,12 @@ main .task-viewer{
     color: white;
   }
 
+  .schedule{
+    margin: 0px 0px 20px 0px;
+  }
+
+
+  /* Done mark */
   main .task-viewer .done::before{
     content: '\02713';
     color: #6EC4AF;
@@ -115,13 +122,25 @@ main .task-viewer{
     text-align: center;
     font-size: 10px;
     padding: 1px 3px;
-
-  }
-  .schedule{
-    margin: 0px 0px 30px 0px;
   }
 
-  /* span edits */
+
+  /* Undone Mark */
+  main .task-viewer .not-done::before{
+    content: '\2715';
+    color: #EA473D;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.5px solid #EA473D;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 10px;
+    padding: 1px 3px;
+  }
+
+
+
+  /* span (flags) edits */
   .edit{
     background-color: #45ABE9;
   }
@@ -141,15 +160,3 @@ main .task-viewer{
     background-color: #B0C925;
   }
 
-  /* title: today */
-  main .task-viewer .not-done::before{
-    content: '\2715';
-    color: #EA473D;
-    background-color: transparent;
-    border-radius: 50%;
-    border: 0.5px solid #EA473D;
-    margin-right: 5px;
-    text-align: center;
-    font-size: 10px;
-    padding: 1px 3px;
-  }
